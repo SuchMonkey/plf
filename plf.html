@@ -20,16 +20,36 @@
 				z-index: attr(z , 0);
 				
 				background-color: rgba(attr(r , 255), attr(g , 255), attr(b , 255), attr(a , 1));
-				border: 1px solid black;
-				
-				box-shadow: attr(z px, 0) attr(z px, 0) calc(attr(z px, 0) / 10) 0 rgba(
-					0 , 
-					0 , 
-					0 , 
-					calc( 1 - attr(z , 0) / 100)
+				border: 1px solid 
+					rgba(
+						0 , 
+						0 , 
+						0 , 
+						calc( attr(a , 1) - attr(z , 0) / 100)
 					);
+				
+				box-shadow: attr(z px, 0) attr(z px, 0) calc(attr(z px, 0) / 5) 0 
+					rgba(
+						0 , 
+						0 , 
+						0 , 
+						calc( attr(a , 1) - attr(z , 0) / 100)
+					);
+				
+				-webkit-animation-name: startup;
+				-webkit-animation-duration: 0.5s;
+				
+				
+				
 			}
 			
+			@-webkit-keyframes startup {
+				from {
+					background-color: rgba(0, 0, 0, 0);
+					box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+				}
+				
+			}
 			
 			
 			plf-row {
@@ -61,173 +81,13 @@
 		
 	</head>
 	<body>
-		<plf-container z="0"  w="100" h="10" x="0" y="90">
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-		</plf-container>
-		
-		<plf-container z="0"  w="10" h="90" x="0" y="0">
-			<plf-row>
-				<plf-cell w="50">
-					1
-				</plf-cell>
-				<plf-cell w="50">
-					2
-				</plf-cell>
-			</plf-row>
-		</plf-container>
-		
-		<plf-container z="0"  w="90" h="90" x="10" y="0">
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-				<plf-cell w="50">
-					asdfasdfasdf
-				</plf-cell>
-			</plf-row>
+		<plf-container x="5" y="5" z="30" w="90" h="70" a="0.5">
 		</plf-container>
 	
-		<plf-container z="50"  w="60" h="50" x="20" y="25" a="0.9">
-			<plf-row>
-				<plf-cell w="20" o="20">
-					asdf
-				</plf-cell>
-				
-				<plf-cell w="20" o="20">
-					asdf
-				</plf-cell>
-				<plf-cell w="20">
-					asdf
-				</plf-cell>
-			</plf-row>
-			<plf-row>
-				<plf-cell w="20">
-					asdf
-				</plf-cell>
-				<plf-cell w="20">
-					asdf
-				</plf-cell>
-				<plf-cell w="20">
-					asdf
-				</plf-cell>
-				<plf-cell w="20">
-					asdf
-				</plf-cell>
-				<plf-cell w="20">
-					asdf
-				</plf-cell>
-			</plf-row>
+		<plf-container x="5" y="80" z="30" w="20" h="15" a="0.5">
+		</plf-container>
+		
+		<plf-container x="30" y="80" z="30" w="65" h="15" a="0.5">
 		</plf-container>
 		
 		
