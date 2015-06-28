@@ -8,7 +8,7 @@
 				display: block;
 				box-sizing: border-box;
 				
-				padding: 0;
+				padding: 0.5vw;
 				margin: 0;
 				
 				width: attr(w vw, 10);
@@ -17,25 +17,218 @@
 				top: attr(y vh, 0);
 				left: attr(x vw, 0);
 				
-				z-index: attr(z, 0);
+				z-index: attr(z , 0);
 				
 				background-color: rgba(attr(r , 255), attr(g , 255), attr(b , 255), attr(a , 1));
 				border: 1px solid black;
 				
-				box-shadow: attr(z px, 0) attr(z px, 0) attr(z px, 0) 1px rgba(0, 0, 0, calc(attr(a , 1) - attr(z , 0) / 100));
+				box-shadow: attr(z px, 0) attr(z px, 0) calc(attr(z px, 0) / 10) 0 rgba(
+					0 , 
+					0 , 
+					0 , 
+					calc( 1 - attr(z , 0) / 100)
+					);
 			}
+			
+			
+			
+			plf-row {
+				display: block;
+				
+				margin: 0;
+				padding: 0;
+				
+				width: 100%;
+				
+				clear: both;
+			}
+			
+			plf-cell {
+				display: block;
+				float: left;
+				
+				width: calc(attr(w %, 100) - 2 * 0.5vw);
+				
+				margin-top: 0.5vw;
+				margin-bottom: 0.5vw;
+				margin-right: 0.5vw;
+				margin-left: calc(0.5vw + attr(o %, 0));
+				
+				background-color: red;
+			}
+			
 		</style>
 		
 	</head>
 	<body>
-		<plf-container z="5" w="50" h="50" x="25" y="25">
+		<plf-container z="0"  w="100" h="10" x="0" y="90">
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
 		</plf-container>
 		
-		<plf-container z="10" w="25" h="25" x="30" y="30" r="255" g="255" b="0" a="1">
+		<plf-container z="0"  w="10" h="90" x="0" y="0">
+			<plf-row>
+				<plf-cell w="50">
+					1
+				</plf-cell>
+				<plf-cell w="50">
+					2
+				</plf-cell>
+			</plf-row>
 		</plf-container>
 		
-		<plf-container z="30" w="25" h="25" x="40" y="20" r="255" g="0" b="0" a="1">
-		</plf-container>	
+		<plf-container z="0"  w="90" h="90" x="10" y="0">
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+				<plf-cell w="50">
+					asdfasdfasdf
+				</plf-cell>
+			</plf-row>
+		</plf-container>
+	
+		<plf-container z="50"  w="60" h="50" x="20" y="25" a="0.9">
+			<plf-row>
+				<plf-cell w="20" o="20">
+					asdf
+				</plf-cell>
+				
+				<plf-cell w="20" o="20">
+					asdf
+				</plf-cell>
+				<plf-cell w="20">
+					asdf
+				</plf-cell>
+			</plf-row>
+			<plf-row>
+				<plf-cell w="20">
+					asdf
+				</plf-cell>
+				<plf-cell w="20">
+					asdf
+				</plf-cell>
+				<plf-cell w="20">
+					asdf
+				</plf-cell>
+				<plf-cell w="20">
+					asdf
+				</plf-cell>
+				<plf-cell w="20">
+					asdf
+				</plf-cell>
+			</plf-row>
+		</plf-container>
 		
 		
 		<script src="./attrpolyfill.js"></script>
